@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import Divider from "../Divider";
+import Image from "next/image";
 const Aboutme = () => {
   return (
     <>
@@ -30,9 +31,11 @@ const Aboutme = () => {
             <Divider />
             <div className="flex gap-16 pb-25 flex-col md:flex-row">
               <div className="img">
-                <img
+                <Image
+                  width={430}
+                  height={515}
                   className="max-w-[430px] max-h-[515px]"
-                  src="images/about_person.jpg"
+                  src="/images/about_person.jpg"
                   alt="about_person"
                 />
               </div>

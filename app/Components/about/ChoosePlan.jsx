@@ -14,8 +14,8 @@ const ChoosePlan = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
             <PlanCard image="/images/logo.png" title="Standard" amount="19" btn="Standard" />
-            <PlanCard image="" title="Professional" amount="29" btn="Professional" />
-            <PlanCard image="" title="Business" amount="39" btn="Business" />
+            <PlanCard image="/images/logo.png" title="Professional" amount="29" btn="Professional" />
+            <PlanCard image="/images/logo.png" title="Business" amount="39" btn="Business" />
           </div>
         </div>
       </div>

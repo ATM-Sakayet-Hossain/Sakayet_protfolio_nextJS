@@ -8,7 +8,7 @@ const ServiceCard = ({ image, title, Description }) => {
         <Image
           width={50}
           height={50}
-          src={image || "/images/graphic-design.png"}
+          src={image}
           alt="icon"
           className="w-full h-full"
         />

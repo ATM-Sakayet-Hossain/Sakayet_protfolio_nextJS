@@ -18,11 +18,11 @@ const Myservice = () => {
               title="Design Trends"
               Description="Designs now lean toward emotional storytelling using abstract shapes, colors, and layouts. It’s less about clarity, more about vibe"
             />
-            <ServiceCard image="" title="PSD Design" Description="High fidelity Photoshop designs tailored for developers ready for pixel perfect implementation" />
-            <ServiceCard image="" title="Customer Support" Description="We don’t just deliver we stay. Our support team ensures smooth onboarding, updates, and issue resolution" />
-            <ServiceCard image="" title="Web Development" Description="From front-end finesse to back-end power, we build scalable, secure, and trend aligned websites using modern stacks" />
+            <ServiceCard image="/images/responsive.png" title="PSD Design" Description="High fidelity Photoshop designs tailored for developers ready for pixel perfect implementation" />
+            <ServiceCard image="/images/responsive.png" title="Customer Support" Description="We don’t just deliver we stay. Our support team ensures smooth onboarding, updates, and issue resolution" />
+            <ServiceCard image="/images/responsive.png" title="Web Development" Description="From front-end finesse to back-end power, we build scalable, secure, and trend aligned websites using modern stacks" />
             <ServiceCard image="/images/responsive.png" title="Fully Responsive" Description="Every pixel adapts mobile, tablet, desktop. Your site looks stunning and functions flawlessly across all devices" />
-            <ServiceCard image="" title="Branding" Description="We shape your brand’s identity from logo to tone of voice ensuring it resonates across cultures and platforms" />
+            <ServiceCard image="/images/responsive.png" title="Branding" Description="We shape your brand’s identity from logo to tone of voice ensuring it resonates across cultures and platforms" />
           </div>
         </div>
       </div>

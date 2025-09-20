@@ -5,7 +5,7 @@ const PlanCard = ({ image, title, amount }) => {
   return (
     <div className="bg-[#00000030] p-10 flex flex-col items-center justify-center">
       <div className="w-20 h-20 p-4 text-white bg-green mb-6">
-        <Image width={50} height={50} src={image || ""} alt="icon" className="w-full h-full" />
+        <Image width={50} height={50} src={image} alt="icon" className="w-full h-full" />
       </div>
       <h2 className="text-2xl font-poppins font-normal text-white tracking-[.5px]">
         {title}
