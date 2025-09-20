@@ -1,16 +1,31 @@
-export default function sitemap() {
-  const routes = [
-    "",           // homepage
-    "about",      // about page
-    "resume",   // projects/portfolio page
-    "portfolio",   // projects/portfolio page
-    "contact",    // contact page
+// app/sitemap.js
+export async function GET() {
+  const urls = [
+    "",
+    "about",
+    "resume",
+    "portfolio",
+    "contact",
   ];
 
-  return routes.map((route) => ({
-    url: `https://sakayet.vercel.app/${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: route === "" ? 1.0 : 0.8,
-  }));
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${urls
+      .map(
+        (url) => `
+      <url>
+        <loc>https://sakayet.vercel.app/${url}</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>${url === "" ? "1.0" : "0.8"}</priority>
+      </url>`
+      )
+      .join("")}
+  </urlset>`;
+
+  return new Response(sitemap, {
+    headers: {
+      "Content-Type": "application/xml", // ✅ Google-friendly header
+    },
+  });
 }
