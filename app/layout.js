@@ -15,6 +15,9 @@ export const metadata = {
   title: "Sakayet's Portfolio",
   description: "Sakayet's Portfolio Website",
   icons: "/images/icon.png",
+  verification: {
+    google: "rc5ntj50DZZDdQ7DHJvLhFoNkpPuVnZhcEHbxr2JHW8", // ✅ Google verification
+  },
 };
 
 export default function RootLayout({ children }) {
