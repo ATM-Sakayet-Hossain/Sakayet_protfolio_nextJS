@@ -1,3 +1,5 @@
+export const revalidate = 60; // optional, sitemap revalidate প্রতি 1 মিনিটে
+
 export default function sitemap() {
   const baseUrl = "https://sakayet.vercel.app";
 
@@ -15,7 +17,7 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resume`,
+      url: `${baseUrl}/resume`, // ⚠️ এখানে ছোট হাতের অক্ষরে দাও
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
