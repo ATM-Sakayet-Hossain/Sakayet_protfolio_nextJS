@@ -1,31 +1,33 @@
 export default function sitemap() {
+  const baseUrl = "https://sakayet.vercel.app";
+
   return [
     {
-      url: "https://sakayet.vercel.app/",
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://sakayet.vercel.app/about",
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://sakayet.vercel.app/resume",
+      url: `${baseUrl}/resume`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://sakayet.vercel.app/portfolio",
+      url: `${baseUrl}/portfolio`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://sakayet.vercel.app/contact",
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
