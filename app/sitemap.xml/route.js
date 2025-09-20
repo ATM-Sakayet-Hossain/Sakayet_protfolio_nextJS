@@ -1,4 +1,5 @@
-// app/sitemap.js
+// app/sitemap.xml/route.js
+
 export async function GET() {
   const urls = [
     "",
@@ -25,7 +26,7 @@ export async function GET() {
 
   return new Response(sitemap, {
     headers: {
-      "Content-Type": "application/xml", // ✅ Google-friendly header
+      "Content-Type": "application/xml", // ✅ খুবই জরুরি
     },
   });
 }
