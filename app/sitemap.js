@@ -1,12 +1,10 @@
-// app/sitemap.js
-
 export default function sitemap() {
   return [
     {
       url: "https://sakayet.vercel.app/",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 1.0,
+      priority: 1,
     },
     {
       url: "https://sakayet.vercel.app/about",
