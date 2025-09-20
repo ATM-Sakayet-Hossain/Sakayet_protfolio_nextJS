@@ -16,21 +16,22 @@ const OfficeTour = () => {
             velit, nemo dolorem voluptas!
           </p>
           <p className="text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Laudantium qui aspernatur unde mollitia, in laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+            qui aspernatur unde mollitia, in laborum.
           </p>
         </div>
 
         {/* Right Content (YouTube Iframe) */}
         <div className="relative rounded-lg overflow-hidden aspect-video">
           <iframe
-            className="w-full h-full rounded-lg"
-            src="https://www.youtube.com/embed/37yK8sgDV04?si=w2LQzOiNnlX6QPiM"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZKJPuudGX2c?si=_gt0cFdck74j4mpY"
             title="YouTube video player"
-            frameBorder="0"
+            // frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
           ></iframe>
         </div>
       </div>

@@ -90,9 +90,13 @@ const Aboutme = () => {
                   </div>
                 </div>
                 <div className="mt-12 flex items-center gap-25">
-                  <button className="bg-green text-white font-poppins px-10 py-2 rounded-2xl ">
+                  <Link
+                    href="/FDR-ATM Sakayet Hossain Resume.pdf"
+                    download="FDR- ATM Sakayet Hossain CV.pdf"
+                    className="bg-green text-white font-poppins px-10 py-2 rounded-2xl cursor-pointer"
+                  >
                     Download CV
-                  </button>
+                  </Link>
                   <div className="flex gap-3">
                     <Link
                       href="https://www.facebook.com/ATMSakayetHossain"
