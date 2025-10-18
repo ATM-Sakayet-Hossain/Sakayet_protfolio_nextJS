@@ -78,7 +78,7 @@ export const metadata = {
     siteName: "Sakayet Portfolio",
     images: [
       {
-        url: "/images/og-image.jpg", // <-- make this image (1200x630)
+        url: "/images/about_person.jpg", // <-- make this image (1200x630)
         width: 1200,
         height: 630,
         alt: "ATM Sakayet Hossain Portfolio Preview",
@@ -90,7 +90,7 @@ export const metadata = {
     title: "ATM Sakayet Hossain | Front-End Developer & UI Designer",
     description:
       "Modern front-end developer building interactive and elegant web apps. Check out my projects and portfolio.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/icon.png"],
     creator: "@sakayet", // optional if you have a Twitter handle
   },
   icons: {
