@@ -51,7 +51,7 @@ const Banner = () => {
                 <FaInstagram className="text-white text-2xl hover:scale-[1.1] duration-[.3s]" />
               </Link>
               <Link
-                href="https://www.youtube.com/@mdshakhawatbhuiyan3801"
+                href="https://www.youtube.com/@ATM-Sakayet-Hossain"
                 target="_blank"
                 rel="noopener noreferrer"
               >
