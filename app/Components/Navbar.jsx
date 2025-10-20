@@ -1,9 +1,9 @@
-"use client"
-import Link from 'next/link';
-import React, { useState } from 'react'
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
 
 const Navbar = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -13,7 +13,11 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <Link href="/" className="navbar-logo">
-         <img className="w-[110px]" src="images/logo.png" alt="logo" />
+          <img
+            className="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-[110px]"
+            src="images/logo.png"
+            alt="logo"
+          />
         </Link>
 
         {/* Hamburger Menu (Mobile) */}
@@ -29,17 +33,29 @@ const Navbar = () => {
         {/* Navbar Links */}
         <ul className={`navbar-menu ${isMobileMenuOpen ? "active" : ""}`}>
           <li className="navbar-item">
-            <Link href="/about" className="navbar-link" onClick={toggleMobileMenu}>
-            About
+            <Link
+              href="/about"
+              className="navbar-link text-sm sm:text-base md:text-lg"
+              onClick={toggleMobileMenu}
+            >
+              About
             </Link>
           </li>
           <li className="navbar-item">
-            <Link href="/Resume" className="navbar-link" onClick={toggleMobileMenu}>            
+            <Link
+              href="/Resume"
+              className="navbar-link text-sm sm:text-base md:text-lg"
+              onClick={toggleMobileMenu}
+            >
               Resume
             </Link>
           </li>
           <li className="navbar-item">
-            <Link href="/portfolio" className="navbar-link" onClick={toggleMobileMenu}>            
+            <Link
+              href="/portfolio"
+              className="navbar-link text-sm sm:text-base md:text-lg"
+              onClick={toggleMobileMenu}
+            >
               Portfolio
             </Link>
           </li>
@@ -49,14 +65,18 @@ const Navbar = () => {
             </Link>
           </li> */}
           <li className="navbar-item">
-            <Link href="/contact" className="navbar-link" onClick={toggleMobileMenu}>
+            <Link
+              href="/contact"
+              className="navbar-link text-sm sm:text-base md:text-lg"
+              onClick={toggleMobileMenu}
+            >
               Contact
             </Link>
           </li>
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

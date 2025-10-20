@@ -2,12 +2,69 @@
 
 @utility container {
   margin-inline: auto;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
+  max-width: 100%;
 }
+
 @utility container-1 {
   margin-inline: auto;
-  padding-inline: 2rem;
-  width: 1300px;
+  padding-inline: 1rem;
+  max-width: 100%;
+}
+
+/* Responsive container utilities */
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  .container-1 {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 2rem;
+  }
+
+  .container-1 {
+    padding-inline: 2rem;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 2.5rem;
+  }
+
+  .container-1 {
+    padding-inline: 2.5rem;
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-inline: 3rem;
+  }
+
+  .container-1 {
+    padding-inline: 3rem;
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    padding-inline: 3.5rem;
+  }
+
+  .container-1 {
+    padding-inline: 3.5rem;
+    max-width: 1300px;
+  }
 }
 @theme {
   --font-poppins: "Poppins", sans-serif;
@@ -18,28 +75,27 @@
   --color-sencond: #9f9f9f;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: rgb(219, 219, 219);
 }
-::-webkit-scrollbar-thumb{
-  background: rgb(119, 119, 119); 
-
+::-webkit-scrollbar-thumb {
+  background: rgb(119, 119, 119);
 }
 
 /* Common css start */
-section{
+section {
   background-color: rgb(24, 24, 24);
   height: 100%;
 }
-.text p{
-  border-bottom: 2px solid rgba(255, 255, 255, .08);
+.text p {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
   padding-bottom: 29px;
 }
 /* core animated bar */
-.animated-bar{
+.animated-bar {
   position: relative;
   display: block;
   width: 75px;
@@ -49,7 +105,7 @@ section{
   overflow: hidden;
 }
 .animated-bar::before,
-.animated-bar::after{
+.animated-bar::after {
   content: "";
   position: absolute;
   top: 0;
@@ -60,12 +116,22 @@ section{
   animation: barAnimation 3s linear infinite;
 }
 
-.animated-bar::before { left: 8px; animation-delay: 0s; }
-.animated-bar::after  { left: 0px; animation-delay: 0s; }
+.animated-bar::before {
+  left: 8px;
+  animation-delay: 0s;
+}
+.animated-bar::after {
+  left: 0px;
+  animation-delay: 0s;
+}
 
-@keyframes barAnimation{
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(75px); }
+@keyframes barAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(75px);
+  }
 }
 /* core animated bar */
 
@@ -74,190 +140,270 @@ section{
 /* Navbar css start */
 /* General Styles */
 .navbar {
-    width: 100%;
-    background: transparent;
-    color: #fff;
-    padding: 35px 20px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  padding: 20px 16px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+.navbar-item {
+  margin-left: 1rem;
+}
+
+.navbar-link {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  font-family: "Poppins", serif;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.navbar-link:hover {
+  color: #009e66;
+  background-color: rgba(0, 158, 102, 0.1);
+}
+
+/* Hamburger Menu (Mobile) */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 16px 12px;
   }
-  
-  .navbar .container {
+
+  .navbar-toggle {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
-  
-  
+
   .navbar-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 10px;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background-color: rgba(24, 24, 24, 0.95);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    padding: 20px 0;
+    border-radius: 0 0 12px 12px;
   }
-  
+
+  .navbar-menu.active {
+    left: 0;
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 12px 20px;
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .navbar {
+    padding: 24px 20px;
+  }
+
+  .navbar-menu {
+    gap: 12px;
+  }
+
+  .navbar-item {
+    margin-left: 1.25rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    padding: 28px 24px;
+  }
+
+  .navbar-menu {
+    gap: 16px;
+  }
+
   .navbar-item {
     margin-left: 1.5rem;
   }
-  
-  .navbar-link {
-    color: #e6e6e6;
-    text-decoration: none;
-    font-size: 15px;
-    transition: color 0.3s ease;
-    font-family: "Poppins", serif;
-  }
-  
-
-  /* Hamburger Menu (Mobile) */
-  .navbar-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .navbar-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.4s;
-  }
-  
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .navbar-toggle {
-      display: flex;
-    }
-  
-    .navbar-menu {
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: -100%;
-      width: 100%;
-      background-color: #333;
-      transition: 0.5s;
-    }
-  
-    .navbar-menu.active {
-      left: 0;
-    }
-  
-    .navbar-item {
-      margin: 1rem 0;
-      text-align: center;
-    }
-  
-    .navbar-link {
-      padding: 1rem;
-      display: block;
-    }
-  }
+}
 /* Navbar css end */
 
 /* Home css start */
 .home {
-    position: relative;
-    width: 100%;
-    /* height: 747px; */
-    background-color: rgba(0, 0, 0, 0.855);
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* height: 747px; */
+  background-color: rgba(0, 0, 0, 0.855);
+  overflow: hidden;
 }
 .home_animation {
-    /* position: relative; */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1000px;
-    background-color: rgba(0, 0, 0, 0.855);
-    animation: home 1s linear;
-    transform: translateY(100%);
-    z-index: 999;
+  /* position: relative; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.855);
+  animation: home 1s linear;
+  transform: translateY(100%);
+  z-index: 999;
 }
 
 @keyframes home {
-    0%{
-        transform: translateY(-100%);
-    }
+  0% {
+    transform: translateY(-100%);
+  }
 }
 /* Home css end */
 
 /* Banner css start */
-#banner{
-    background-image: url(../public/images/home.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: calc(var(--vh, 1vh)* 100);
-    position: relative;
-    overflow: hidden;
-    /* padding: 100px; */
+#banner {
+  background-image: url(../public/images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+  overflow: hidden;
+  /* padding: 100px; */
 }
-#banner::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    opacity: .40;
-    z-index: 2;
+#banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.4;
+  z-index: 2;
 }
 
-#banner .text{
+#banner .text {
   width: 100%;
   z-index: 11;
-position: absolute;
-top: -10px;
-left: 0;
-text-align: center;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  text-align: center;
+  padding: 0 1rem;
 }
 
-.icons{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
+.icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+/* Responsive banner adjustments */
+@media (max-width: 640px) {
+  #banner .text {
+    padding: 0 0.5rem;
+  }
+
+  .icons {
+    right: 0.5rem;
+    bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  #banner .text {
+    padding: 0 1rem;
+  }
+
+  .icons {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  #banner .text {
+    padding: 0 1.5rem;
+  }
+
+  .icons {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
 }
 /* Banner css end */
 
 /* Typing effect css start */
 .typing-effect {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 26px;
-    font-family: 'poppins', sans-serif;
-    font-weight: 700;
-    padding-top: 12px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 26px;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  padding-top: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: black;
+  animation: blink 0.8s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
   }
-  
-  .cursor {
-    display: inline-block;
-    width: 10px;
-    background-color: black;
-    animation: blink 0.8s step-start infinite;
-  }
-  
-  @keyframes blink {
-    50% {
-      background-color: transparent;
-    }
-  }
+}
 /* Typing effect css end */
 
 /* About css start */
 .about {
-    position: relative;
-    width: 100%;
-    /* height: 747px; */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* height: 747px; */
+  overflow: hidden;
 }
 /* About css end */

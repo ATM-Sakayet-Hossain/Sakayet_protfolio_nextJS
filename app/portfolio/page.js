@@ -52,20 +52,20 @@ const page = () => {
         <span className="home_animation"></span>
         <div className="container-1">
           <div className="row ">
-            <div className="close_button flex justify-end pt-6 text-3xl text-white fixed right-16 top-2">
+            <div className="close_button flex justify-end pt-4 sm:pt-6 text-2xl sm:text-3xl text-white fixed right-4 sm:right-8 md:right-12 lg:right-16 top-2">
               <Link href="/">
                 <IoMdClose />
               </Link>
             </div>
-            <h3 className="text-white opacity-50 text-center text-[15px] pt-[7%] mb-[17px] font-poppins">
+            <h3 className="text-white opacity-50 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-[15px] pt-8 sm:pt-12 md:pt-16 lg:pt-20 xl:pt-[7%] mb-4 sm:mb-6 md:mb-8 lg:mb-12 xl:mb-[17px] font-poppins">
               Showcasing some of my best work
             </h3>
-            <h2 className="text-[46px] font-bold font-poppins text-white leading-[100%] text-center mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[46px] font-bold font-poppins text-white leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-[100%] text-center mb-6 sm:mb-8">
               Portfolio
             </h2>
             <Divider />
           </div>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {projects.map((projects, index) => (
               <ProjectCard data={projects} key={index} />
             ))}
