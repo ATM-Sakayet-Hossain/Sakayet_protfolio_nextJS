@@ -26,7 +26,7 @@ const page = () => {
               Resume
             </h2>
             <Divider />
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full md:flex items-center justify-between">
               <Education />
               <Experience />
             </div>

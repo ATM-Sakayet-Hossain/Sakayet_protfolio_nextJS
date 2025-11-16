@@ -26,7 +26,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center p-6">
       <div className="w-full max-w-2xl">
         <h2 className="text-2xl font-bold text-white mb-6">Education</h2>
         <div className="border-l-2 border-green">
