@@ -2,6 +2,14 @@ import React from "react";
 import ServiceCard from "./ServiceCard";
 
 const Myservice = () => {
+  const service= [
+    { image: "https://res.cloudinary.com/thewebmaster/image/upload/c_scale,f_auto,q_auto:best,w_516/images/html/html5.png",
+      title: "Design Trends",
+      Description: "Designs now lean toward emotional storytelling using abstract shapes, colors, and layouts. It's less about clarity, more about vibe" },
+    { image: "/images/responsive.png",
+      title: "PSD Design",
+      Description: "High fidelity Photoshop designs tailored for developers ready for pixel perfect implementation" },
+    ]
   return (
     <section>
       <div className="container-1">

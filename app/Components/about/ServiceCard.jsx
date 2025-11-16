@@ -3,7 +3,7 @@ import React from "react";
 
 const ServiceCard = ({ image, title, Description }) => {
   return (
-    <div className="bg-[#00000030] p-4 sm:p-6 md:p-8 lg:p-10 hover:border-2 border-green rounded-2xl transition-all duration-300 hover:transform hover:scale-105">
+    <div className="bg-[#00000030] p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:border-green rounded-2xl transition-all duration-300 hover:transform hover:scale-120">
       <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 p-3 sm:p-4 text-white bg-green mb-4 sm:mb-6">
         <Image
           width={50}
