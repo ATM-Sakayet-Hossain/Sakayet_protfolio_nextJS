@@ -2,6 +2,26 @@ import React from "react";
 import PlanCard from "./PlanCard";
 
 const ChoosePlan = () => {
+  const packetsplan = [
+    {
+      image: "/images/logo.png",
+      title: "Standard",
+      amount: "19",
+      btn: "Standard",
+    },
+    {
+      image: "/images/logo.png",
+      title: "Professional",
+      amount: "29",
+      btn: "Professional",
+    },
+    {
+      image: "/images/logo.png",
+      title: "Business",
+      amount: "39",
+      btn: "Business",
+    },
+  ];
   return (
     <section>
       <div className="container-1">
@@ -13,9 +33,9 @@ const ChoosePlan = () => {
             Choose a Plan
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            <PlanCard image="/images/logo.png" title="Standard" amount="19" btn="Standard" />
-            <PlanCard image="/images/logo.png" title="Professional" amount="29" btn="Professional" />
-            <PlanCard image="/images/logo.png" title="Business" amount="39" btn="Business" />
+            {packetsplan.map((plan, index) => (
+              <PlanCard key={index} data={plan} />
+            ))}
           </div>
         </div>
       </div>

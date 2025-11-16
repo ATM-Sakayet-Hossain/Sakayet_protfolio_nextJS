@@ -2,14 +2,45 @@ import React from "react";
 import ServiceCard from "./ServiceCard";
 
 const Myservice = () => {
-  const service= [
-    { image: "https://res.cloudinary.com/thewebmaster/image/upload/c_scale,f_auto,q_auto:best,w_516/images/html/html5.png",
+  const service = [
+    {
+      image:
+        "https://res.cloudinary.com/thewebmaster/image/upload/c_scale,f_auto,q_auto:best,w_516/images/html/html5.png",
       title: "Design Trends",
-      Description: "Designs now lean toward emotional storytelling using abstract shapes, colors, and layouts. It's less about clarity, more about vibe" },
-    { image: "/images/responsive.png",
+      Description:
+        "Designs now lean toward emotional storytelling using abstract shapes, colors, and layouts. It's less about clarity, more about vibe",
+    },
+    {
+      image: "/images/responsive.png",
       title: "PSD Design",
-      Description: "High fidelity Photoshop designs tailored for developers ready for pixel perfect implementation" },
-    ]
+      Description:
+        "High fidelity Photoshop designs tailored for developers ready for pixel perfect implementation",
+    },
+    {
+      image: "/images/responsive.png",
+      title: "Customer Support",
+      Description:
+        "We don't don't just deliver we stay. Our support team ensures smooth onboarding, updates, and issue resolution",
+    },
+    {
+      image: "/images/responsive.png",
+      title: "Web Development",
+      Description:
+        "From front-end finesse to back-end power, we build scalable, secure, and trend aligned websites using modern stacks",
+    },
+    {
+      image: "/images/responsive.png",
+      title: "Fully Responsive",
+      Description:
+        "Every pixel adapts mobile, tablet, desktop. Your site looks stunning and functions flawlessly across all devices",
+    },
+    {
+      image: "/images/responsive.png",
+      title: "Branding",
+      Description:
+        "We shape your brand's identity from logo to tone of voice ensuring it resonates across cultures and platforms",
+    },
+  ];
   return (
     <section>
       <div className="container-1">
@@ -21,36 +52,9 @@ const Myservice = () => {
             My Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-8 md:mt-10">
-            <ServiceCard
-              image="https://res.cloudinary.com/thewebmaster/image/upload/c_scale,f_auto,q_auto:best,w_516/images/html/html5.png"
-              title="Design Trends"
-              Description="Designs now lean toward emotional storytelling using abstract shapes, colors, and layouts. It's less about clarity, more about vibe"
-            />
-            <ServiceCard
-              image="/images/responsive.png"
-              title="PSD Design"
-              Description="High fidelity Photoshop designs tailored for developers ready for pixel perfect implementation"
-            />
-            <ServiceCard
-              image="/images/responsive.png"
-              title="Customer Support"
-              Description="We don't just deliver we stay. Our support team ensures smooth onboarding, updates, and issue resolution"
-            />
-            <ServiceCard
-              image="/images/responsive.png"
-              title="Web Development"
-              Description="From front-end finesse to back-end power, we build scalable, secure, and trend aligned websites using modern stacks"
-            />
-            <ServiceCard
-              image="/images/responsive.png"
-              title="Fully Responsive"
-              Description="Every pixel adapts mobile, tablet, desktop. Your site looks stunning and functions flawlessly across all devices"
-            />
-            <ServiceCard
-              image="/images/responsive.png"
-              title="Branding"
-              Description="We shape your brand's identity from logo to tone of voice ensuring it resonates across cultures and platforms"
-            />
+            {service.map((item, index) => (
+              <ServiceCard key={index} data={item} />
+            ))}
           </div>
         </div>
       </div>
