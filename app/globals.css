@@ -298,8 +298,8 @@ section {
 /* Home css end */
 
 /* Banner css start */
-#banner {
-  background-image: url(../public/images/home.jpg);
+  #banner {
+  background-image: url(../public/images/320.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -307,6 +307,28 @@ section {
   position: relative;
   overflow: hidden;
   /* padding: 100px; */
+}
+@media (min-width: 640px) {
+  #banner {
+  background-image: url(../public/images/md.jpg);
+}
+}
+@media (min-width: 768px) {
+  #banner {
+  background-image: url(../public/images/md.jpg);
+}
+}
+
+@media (min-width: 1024px) {
+  #banner {
+  background-image: url(../public/images/lg.jpg);
+}
+}
+
+@media (min-width: 1280px) {
+  #banner {
+  background-image: url(../public/images/home.jpg);
+}
 }
 #banner::after {
   content: "";
