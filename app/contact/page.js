@@ -17,7 +17,7 @@ const page = () => {
               </Link>
             </div>
             <h3 className="text-white opacity-50 text-center text-[15px] pt-[7%] mb-[17px] font-poppins">
-              Feel free to contact me anytimes
+              Feel free how to ask quetions in any mode
             </h3>
             <h2 className="text-[46px] font-bold font-poppins text-white leading-[100%] text-center mb-8">
               Get in Touch
