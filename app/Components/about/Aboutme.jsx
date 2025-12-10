@@ -26,7 +26,7 @@ const Aboutme = () => {
               Get to know me
             </h3>
             <h2 className="text-[46px] font-bold font-poppins text-white leading-[100%] text-center mb-8">
-              About Me
+              About My Profiles
             </h2>
             <Divider />
             <div className="flex gap-16 pb-25 flex-col md:flex-row">
