@@ -1,39 +1,3 @@
-// import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// export const metadata = {
-//   title: "Sakayet's Portfolio",
-//   description: "Sakayet's Portfolio Website",
-//   icons: "/images/icon.png",
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <head>
-//         <meta
-//           name="google-site-verification"
-//           content="FNRGUUHYELWtCxS81dqo2oyip-Dym9m6ZMOiWqiiR-A"
-//         />
-//       </head>
-//       <body
-//         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-//       >
-//         {children}
-//       </body>
-//     </html>
-//   );
-// }
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NeonCursor from "./Components/effects/NeonCursor";
@@ -58,17 +22,25 @@ export const metadata = {
   keywords: [
     "ATM Sakayet Hossain",
     "ATM-Sakayet-Hossain",
+    "Md Shakhawat Bhuiyan",
+    "Md-Shakhawat-Bhuiyan",
     "Sakayet",
-    "Front-End Developer",
-    "Web Developer",
-    "React Developer",
-    "Next.js Developer",
+    "Sakayet Front-End Developer",
+    "Sakayet Full Stack Developer",
+    "Shakhawat Front-End Developer",
+    "Shakhawat Full Stack Developer",
+    "sakayet Web Developer",
+    "Shakhawat Web Developer",
+    "sakayet React Developer",
+    "Shakhawat React Developer",
+    "sakayet Next.js Developer",
+    "Shakhawat Next.js Developer",
     "Tailwind CSS",
     "JavaScript",
     "Bangladesh Developer",
     "Portfolio Website",
   ],
-  authors: [{ name: "ATM Sakayet Hossain" }],
+  authors: [{ name: "ATM Sakayet Hossain" }, { name: "Md Shakhawat Bhuiyan" }],
   creator: "ATM Sakayet Hossain",
   publisher: "ATM Sakayet Hossain",
   openGraph: {
