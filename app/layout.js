@@ -36,6 +36,8 @@
 // }
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NeonCursor from "./Components/effects/NeonCursor";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,7 +62,7 @@ export const metadata = {
     "Front-End Developer",
     "Web Developer",
     "React Developer",
-    "Next.js",
+    "Next.js Developer",
     "Tailwind CSS",
     "JavaScript",
     "Bangladesh Developer",
@@ -116,8 +118,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          minHeight: "100vh",
+          position: "relative",
+          backgroundColor: "#000",
+        }}
       >
-        {children}
+        <NeonCursor />
+        <main style={{ position: "relative", zIndex: 1 }}>{children}</main>
+        <Script src="https://presidepickles.com/6c/34/ce/6c34ce1fdc71d301a2c9db3867abbf01.js"/>
       </body>
     </html>
   );

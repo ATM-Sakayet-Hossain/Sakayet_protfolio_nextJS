@@ -85,6 +85,40 @@
   background: rgb(119, 119, 119);
 }
 
+/* ========== Neon Cursor Effect ========== */
+html,
+body {
+  -webkit-user-select: none;
+  user-select: none;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+#neon-cursor-canvas {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Ensure all interactive elements work above the canvas */
+a,
+button,
+input,
+textarea,
+select,
+[role="button"],
+.clickable {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+/* ========================================= */
+
 /* Common css start */
 section {
   background-color: rgb(24, 24, 24);
@@ -298,7 +332,7 @@ section {
 /* Home css end */
 
 /* Banner css start */
-  #banner {
+#banner {
   background-image: url(../public/images/320.jpg);
   background-size: cover;
   background-position: center;
@@ -310,25 +344,25 @@ section {
 }
 @media (min-width: 640px) {
   #banner {
-  background-image: url(../public/images/md.jpg);
-}
+    background-image: url(../public/images/md.jpg);
+  }
 }
 @media (min-width: 768px) {
   #banner {
-  background-image: url(../public/images/md.jpg);
-}
+    background-image: url(../public/images/md.jpg);
+  }
 }
 
 @media (min-width: 1024px) {
   #banner {
-  background-image: url(../public/images/lg.jpg);
-}
+    background-image: url(../public/images/lg.jpg);
+  }
 }
 
 @media (min-width: 1280px) {
   #banner {
-  background-image: url(../public/images/home.jpg);
-}
+    background-image: url(../public/images/home.jpg);
+  }
 }
 #banner::after {
   content: "";
