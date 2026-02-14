@@ -126,7 +126,10 @@ export default function RootLayout({ children }) {
       >
         <NeonCursor />
         <main style={{ position: "relative", zIndex: 1 }}>{children}</main>
-        <Script src="https://presidepickles.com/6c/34/ce/6c34ce1fdc71d301a2c9db3867abbf01.js"/>
+        {/* main contain add */}
+        <Script src="https://presidepickles.com/6c/34/ce/6c34ce1fdc71d301a2c9db3867abbf01.js"></Script>
+        {/* popup add */}
+        <Script src="https://presidepickles.com/ec/57/29/ec572998d7d0505654cbbb4a7acfae0c.js"></Script>
       </body>
     </html>
   );
