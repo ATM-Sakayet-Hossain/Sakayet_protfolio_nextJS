@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 // ----------- ✅ SEO META DATA -----------
 export const metadata = {
-  metadataBase: new URL("https://sakayet.vercel.app"),
+  metadataBase: new URL("https://www.sakayet.dev/"),
   title: "ATM Sakayet Hossain | Front-End Developer & UI Designer",
   description:
     "I'm ATM Sakayet Hossain, a passionate Front-End Developer creating modern, fast, and responsive web experiences using React, Next.js, and Tailwind CSS.",
@@ -28,7 +28,15 @@ export const metadata = {
     "Sakayet Front-End Developer",
     "Sakayet Full Stack Developer",
     "Shakhawat Front-End Developer",
+    "Md-Shakhawat-Bhuiyan Front-End Developer",
+    "Md Shakhawat Bhuiyan Front-End Developer",
+    "ATM Sakayet Hossain Front-End Developer",
+    "ATM-Sakayet-Hossain Front-End Developer",
     "Shakhawat Full Stack Developer",
+    "Md-Shakhawat-Bhuiyan Full Stack Developer",
+    "ATM Sakayet Hossain Full Stack Developer",
+    "ATM-Sakayet-Hossain Full Stack Developer",
+    "Md Shakhawat Bhuiyan Full Stack Developer",
     "sakayet Web Developer",
     "Shakhawat Web Developer",
     "sakayet React Developer",
@@ -45,7 +53,7 @@ export const metadata = {
   publisher: "ATM Sakayet Hossain",
   openGraph: {
     type: "website",
-    url: "https://sakayet.vercel.app",
+    url: "https://www.sakayet.dev/",
     title: "ATM Sakayet Hossain | Front-End Developer & UI Designer",
     description:
       "Modern web developer crafting responsive and interactive digital experiences. Explore my portfolio and work samples.",
@@ -77,7 +85,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://sakayet.vercel.app",
+    canonical: "https://www.sakayet.dev/",
   },
   verification: {
     google: "FNRGUUHYELWtCxS81dqo2oyip-Dym9m6ZMOiWqiiR-A", // your GSC code
