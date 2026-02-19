@@ -52,16 +52,11 @@ const Myservice = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[36px] font-bold font-poppins text-white leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-[100%] text-start">
             My Services
           </h2>
-          <Link
-            target="_blank"
-            href="https://presidepickles.com/n673wi7e?key=9d9801af15bae8f09dcb8cd816be7e0f"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-8 md:mt-10">
-              {service.map((item, index) => (
-                <ServiceCard key={index} data={item} />
-              ))}
-            </div>
-          </Link>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-8 md:mt-10">
+            {service.map((item, index) => (
+              <ServiceCard key={index} data={item} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
