@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   const educationData = [
     {
-      title: "Assistant Engineer",
+      title: "Sub-Assistant Engineer",
       university: "Shaheed Monsur Ali Medical College Hospital",
       year: "Oct-21 – Nov 2024 (3 years)",
       description:
