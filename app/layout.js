@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 // ----------- ✅ SEO META DATA -----------
 export const metadata = {
   metadataBase: new URL("https://www.sakayet.dev/"),
-  title: "ATM Sakayet Hossain | Front-End Developer & UI Designer",
+  title: "ATM Sakayet Hossain | Full Stack Developer & UI Designer",
   description:
-    "I'm ATM Sakayet Hossain, a passionate Front-End Developer creating modern, fast, and responsive web experiences using React, Next.js, and Tailwind CSS.",
+    "I'm ATM Sakayet Hossain, a passionate Full Stack Developer creating modern, fast, and responsive web experiences using React, Next.js, and Tailwind CSS.",
   keywords: [
     "ATM Sakayet Hossain",
     "ATM-Sakayet-Hossain",
@@ -29,8 +29,8 @@ export const metadata = {
     "Sakayet Full Stack Developer",
     "Shakhawat Front-End Developer",
     "Md-Shakhawat-Bhuiyan Front-End Developer",
-    "Md Shakhawat Bhuiyan Front-End Developer",
-    "ATM Sakayet Hossain Front-End Developer",
+    "Md Shakhawat Bhuiyan Full Stack Developer",
+    "ATM Sakayet Hossain Full Stack Developer",
     "ATM-Sakayet-Hossain Front-End Developer",
     "Shakhawat Full Stack Developer",
     "Md-Shakhawat-Bhuiyan Full Stack Developer",
@@ -48,13 +48,13 @@ export const metadata = {
     "Bangladesh Developer",
     "Portfolio Website",
   ],
-  authors: [{ name: "ATM Sakayet Hossain" }, { name: "Md Shakhawat Bhuiyan" }],
+  authors: [{ name: "ATM Sakayet Hossain" }],
   creator: "ATM Sakayet Hossain",
   publisher: "ATM Sakayet Hossain",
   openGraph: {
     type: "website",
     url: "https://www.sakayet.dev/",
-    title: "ATM Sakayet Hossain | Front-End Developer & UI Designer",
+    title: "ATM Sakayet Hossain | Full Stack Developer & UI Designer",
     description:
       "Modern web developer crafting responsive and interactive digital experiences. Explore my portfolio and work samples.",
     siteName: "Sakayet Portfolio",
@@ -69,16 +69,16 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ATM Sakayet Hossain | Front-End Developer & UI Designer",
+    title: "ATM Sakayet Hossain | Full Stack Developer & UI Designer",
     description:
-      "Modern front-end developer building interactive and elegant web apps. Check out my projects and portfolio.",
-    images: ["/images/icon.png"],
+      "Modern Full Stack developer building interactive and elegant web apps. Check out my projects and portfolio.",
+    images: ["/images/about_person.jpg"],
     creator: "@sakayet", // optional if you have a Twitter handle
   },
   icons: {
-    icon: "/images/icon.png",
-    shortcut: "/images/icon.png",
-    apple: "/images/icon.png",
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
   },
   robots: {
     index: true,
