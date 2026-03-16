@@ -23,7 +23,7 @@ const Banner = () => {
               <span>a</span>
               <span>
                 <TypingEffect
-                  words={["Web Designer", "Front-End Developer", "Freelancer"]}
+                  words={["Web Designer", "Front-End Developer", "Freelancer", "Full Stack Developer", "Back-end Developer", "MERN Stack Developer" ]}
                 />
               </span>
             </h2>

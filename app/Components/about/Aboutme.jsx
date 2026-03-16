@@ -44,7 +44,7 @@ const Aboutme = () => {
                   Who am i?
                 </h3>
                 <h2 className="text-[31px] font-bold font-poppins text-white tracking-[.5px] mb-4">
-                  I'm ATM Sakayet Hossain, <br /> a visual Web Developer
+                  I'm ATM Sakayet Hossain, <br /> a visual Full Stack Developer
                 </h2>
                 <p className="text-[15px] font-poppins font-normal text-sencond tracking-[.5px]">
                   Based in Bangladesh, I craft scalable, culturally resonant
@@ -91,8 +91,8 @@ const Aboutme = () => {
                 </div>
                 <div className="mt-12 flex items-center gap-25">
                   <Link
-                    href="/FDR-ATM Sakayet Hossain Resume.pdf"
-                    download="FDR- ATM Sakayet Hossain CV.pdf"
+                    href="/ATM Sakayet Hossain Resume.pdf"
+                    download="Full Stack Developer (ATM Sakayet Hossain Resume).pdf"
                     className="bg-green text-white font-poppins px-10 py-2 rounded-2xl cursor-pointer"
                   >
                     Download CV

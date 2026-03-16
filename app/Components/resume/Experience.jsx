@@ -16,13 +16,13 @@ const Experience = () => {
       description:
         "Accounts and Finance Department",
     },
-    // {
-    //   title: "Master Degree",
-    //   university: "Harvard University",
-    //   year: "2012 - 2015",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.",
-    // },
+    {
+      title: "Secondary School Certificate",
+      university: "Maijdee Technical School & College",
+      year: "2013",
+      description:
+        "General Electrical Technology",
+    },
   ];
 
   return (

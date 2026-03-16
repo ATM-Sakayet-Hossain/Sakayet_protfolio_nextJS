@@ -9,9 +9,9 @@ const page = () => {
     <div className="about">
       <span className="home_animation"></span>
       <Aboutme />
-      <Myservice />
-      <Testimonials />
-      <ChoosePlan />
+      {/* <Myservice /> */}
+      {/* <Testimonials /> */}
+      {/* <ChoosePlan /> */}
     </div>
   );
 };
